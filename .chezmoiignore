@@ -1,0 +1,4 @@
+{{ if eq .chezmoi.hostname "AdamsLaptop" }}
+.nvidia-settings-rc
+.fehbg
+{{ end }}

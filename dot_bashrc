@@ -1,0 +1,20 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias v='nvim'
+alias c='xclip -selection clipboard'
+alias pc='pwd | xclip -selection clipboard'
+alias python='python3'
+
+export PATH="$PATH:~/Downloads/flutter/flutter/bin"
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+source "$HOME/.cargo/env"
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh
+export PATH="$HOME/.local/bin:$PATH"
+[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh

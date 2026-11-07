@@ -1,0 +1,26 @@
+super + {F1,F2}
+  bash /home/adam/.config/sxhkd/{volDown.sh,volUp.sh}
+
+super + shift + F3
+	bash /home/adam/.config/sxhkd/volMute.sh
+
+super + F3
+	dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+
+super + shift + {F1,F2}
+	dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.{Previous,Next}
+
+super + ctrl + l
+	systemctl suspend
+
+super + shift + l
+	xset dpms force suspend
+
+Print
+  flameshot gui
+
+super + F5
+    xinput set-prop 8 "Coordinate Transformation Matrix" 1 0 0 0 1 0 0 0 1
+
+super + F6
+    xinput set-prop 8 "Coordinate Transformation Matrix" 2.4 0 0 0 2.4 0 0 0 1
